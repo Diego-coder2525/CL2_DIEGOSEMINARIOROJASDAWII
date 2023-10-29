@@ -37,7 +37,8 @@ public class LoginController {
                 .getPrincipal();
         HttpSession session = request.getSession();
         session.setAttribute("usuario", usuario.getUsername());
-        return "frontoffice/auth/home";
+        System.out.println("Usuario autenticado: " + usuario.getUsername());
+        return "home2";
     }
 
     @PostMapping("/guardarUsuario")

@@ -4,5 +4,7 @@
 </head>
 <body>
 <nav th:replace="~{layout::menu}"></nav>
+<h1>Bienvenido:</h1>
+<h1 th:text="${session.usuario}"></h1>
 </body>
 </html>
