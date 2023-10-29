@@ -30,7 +30,7 @@ public class LoginController {
     }
 
     @PostMapping("/login-success")
-    public String loginSucces(HttpServletRequest request){
+    public String loginSuccess(HttpServletRequest request){
         UserDetails usuario = (UserDetails) SecurityContextHolder
                 .getContext()
                 .getAuthentication()
